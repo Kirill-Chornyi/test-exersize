@@ -49,6 +49,7 @@ background-color: $aside_background;
 }
 
 .aside-image {
+    position: relative;
     & img {
         display: inline-block;
         max-width:220px;
@@ -56,6 +57,13 @@ background-color: $aside_background;
         border:1px solid $orange;
     }
 }
+
+.avatar__svg_active{position: absolute;
+    top:20px;
+    left:20px;
+    z-index: 1;
+    border: none !important;}
+
 .aside__block {
     padding: 0 30px;
     border-bottom: solid 0.03125rem #242424;
@@ -193,14 +201,14 @@ background-color: $aside_background;
     border-radius: 50%;
     text-align: center;
     margin-right: 16px;
-    position: relative;
 }
 
-.avatar__svg_active{position: absolute;
-top:55px;
-left:65px;
-z-index: 1;
-border: none !important;}
+.item__avatar_active {
+    position: relative;
+}
+.svg_active{position: absolute;
+    top:-7px;
+    left:25px;}
 
 .item__name {
     width:142px;
@@ -241,12 +249,7 @@ left:243px;}
     font-size: $fs;
     font-weight: normal;
 }
-.item__avatar_active {
-    position: relative;
-}
-.svg_active{position: absolute;
-top:-7px;
-left:25px;}
+
 .item__text_active{
     background-clip:content-box;
     -webkit-text-fill-color:white;

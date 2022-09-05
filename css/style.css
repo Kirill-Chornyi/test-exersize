@@ -114,11 +114,23 @@ aside {
   background-color: #1D1C1C;
 }
 
+.aside-image {
+  position: relative;
+}
+
 .aside-image img {
   display: inline-block;
   max-width: 220px;
   max-height: 293px;
   border: 1px solid #DB9351;
+}
+
+.avatar__svg_active {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  border: none !important;
 }
 
 .aside__block {
@@ -286,15 +298,16 @@ aside {
   border-radius: 50%;
   text-align: center;
   margin-right: 16px;
+}
+
+.item__avatar_active {
   position: relative;
 }
 
-.avatar__svg_active {
+.svg_active {
   position: absolute;
-  top: 55px;
-  left: 65px;
-  z-index: 1;
-  border: none !important;
+  top: -7px;
+  left: 25px;
 }
 
 .item__name {
@@ -339,16 +352,6 @@ aside {
   color: #959595;
   font-size: 16px;
   font-weight: normal;
-}
-
-.item__avatar_active {
-  position: relative;
-}
-
-.svg_active {
-  position: absolute;
-  top: -7px;
-  left: 25px;
 }
 
 .item__text_active {
