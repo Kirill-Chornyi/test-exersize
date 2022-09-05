@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>K&C Messages 1</title>
+</head>
+<body>
+    <div class="body__contaiber">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Главная</a></li>
+                    <li><a class="menu__item aside__tab" href="#">Сообщения 3</a></li>
+                    <li><a class="menu__item aside__tab profile" href="#">Профиль</a></li>
+                    <li><a class="menu__item aside__tab settings" href="#">Настройки</a></li>
+                    <li><a class="menu__item aside__tab questions" href="#">Вопросы</a></li>
+                    <li><a class="menu__item aside__tab contactus" href="#">Написать <br> модератору</a></li>
+                    <li><a class="menu__item aside__tab" href="#"><button class="buy-sub-button">Купить подписку</button></a></li>
+            </ul>
+          </div>
+        <aside>
+            <div class="aside-image"> <img src="./source/image.svg" alt="profile photo"> </div>
+            <div class="aside__block">
+                <div class="msg-block__tab aside__tab_active">
+                    <p class="aside__tab">Сообщения</p>
+                    <p class="aside__tab">3</p>
+                </div>
+            </div>
+
+            <div class="aside__block profile-block">
+                <p class="aside__tab profile">Профиль</p>
+                <p class="aside__tab settings">Настройки</p>
+            </div>
+
+            <div class="aside__block administartion-block">
+                <p class="aside__tab">Вопросы</p>
+                <p class="aside__tab">Написать модератору</p>
+            </div>
+
+            <div class="aside__block buy-sub">
+                <button class="buy-sub-button">Купить подписку</button>
+            </div>
+        </aside>
+        <main class="main">
+            <div class="main__header">
+                <div class="header__change">
+                    <p class="header__tab delete-button">Удалить</p>
+                    <p class="header__tab archive-add-button">Добавить в архив</p>
+                </div>
+                <div class="header__flter">
+                    <p class="header__tab header__tab_active">Непрочитанные</p>
+                    <p class="header__tab archive-button">Aрхив</p>
+                </div>
+                <form class="header__search">
+                    <input type="text">
+                    <button type="submit" class="search-button">Искать →</button>
+                </form>
+            </div>
+            <div class="main__chats">
+                <div class="chats__item">
+                    <div class="item__check"> <input name="cssCheckbox" id="demo_opt_1" type="checkbox" class="css-checkbox"> </div>
+                    <div class="item__avatar"><img src="./source/item.svg" alt="chat avatar" srcset=""></div>
+                    <p class="item__name">Александр Анто... </p>
+                    <img class="item__lock" src="./source/lock.svg" alt="icons svg lock" srcset="">
+                    <p class="item__text">здравствуйте. как долго придется ждать нож кото</p>
+                    <p class="item__date">13/04/2018</p>
+                    <p class="item__time">14:02</p>                    
+                </div>
+
+                <div class="chats__item">
+                    <div class="item__check"><input type="checkbox"></div>
+                    <div class="item__avatar item__avatar_active"><img src="./source/item.svg" alt="chat avatar" srcset=""></div>
+                    <p class="item__name">Gun Machine</p>
+                    <p class="item__text">а почему на ноже нет ни одной царапины?</p>
+                    <p class="item__date">01/12/2018</p>
+                    <p class="item__time">00:14</p>                    
+                </div>
+
+                <div class="chats__item">
+                    <div class="item__check"><input type="checkbox"></div>
+                    <div class="item__avatar"><img src="./source/item.svg" alt="chat avatar" srcset=""></div>
+                    <p class="item__name">Диана Павлова</p>
+                    <p class="item__text">нет, мне не нужно. если и вам тоже пофиг, то выб</p>
+                    <p class="item__date">13/04/2018</p>
+                    <p class="item__time">14:02</p>                    
+                </div>
+
+                <div class="chats__item">
+                    <div class="item__check"><input type="checkbox"></div>
+                    <div class="item__avatar"><img src="./source/item.svg" alt="chat avatar" srcset=""></div>
+                    <p class="item__name">Otto Zweig</p>
+                    <p class="item__text">thank you!  that’s great!</p>
+                    <p class="item__date">01/12/2018</p>
+                    <p class="item__time">00:14</p>                  
+                </div>
+
+                <div class="chats__item">
+                    <div class="item__check"><input type="checkbox"></div>
+                    <div class="item__avatar"><img src="./source/item.svg" alt="chat avatar" srcset=""></div>
+                    <p class="item__name">Александр Анто... </p>
+                    <img class="item__lock" src="./source/lock.svg" alt="icons svg lock" srcset=""> 
+                    <p class="item__text">здравствуйте. как долго придется ждать нож кото</p>
+                    <p class="item__date">13/04/2018</p>
+                    <p class="item__time">14:02</p>                    
+                </div>
+
+                <div class="chats__item">
+                    <div class="item__check"><input type="checkbox"></div>
+                    <div class="item__avatar item__avatar_active"><img src="./source/item.svg" alt="chat avatar" srcset=""></div>
+                    <p class="item__name">Gun Machine</p>
+                    <p class="item__text">а почему на ноже нет ни одной царапины?</p>
+                    <p class="item__date item__date_active">01/12/2018</p>
+                    <p class="item__time item__time_active">00:14</p>                    
+                </div>
+
+                <div class="chats__item">
+                    <div class="item__check"><input type="checkbox"></div>
+                    <div class="item__avatar"><img src="./source/item.svg" alt="chat avatar" srcset=""></div>
+                    <p class="item__name">Диана Павлова</p>
+                    <p class="item__text">нет, мне не нужно. если и вам тоже пофиг, то выб</p>
+                    <p class="item__date">13/04/2018</p>
+                    <p class="item__time">14:02</p>                    
+                </div>
+
+                <div class="chats__item">
+                    <div class="item__check"><input type="checkbox"></div>
+                    <div class="item__avatar"><img src="./source/item.svg" alt="chat avatar" srcset=""></div>
+                    <p class="item__name">Otto Zweig</p>
+                    <p class="item__text item__text_active">thank you!  that’s great!</p>
+                    <p class="item__date item__date_active">01/12/2018</p>
+                    <p class="item__time item__time_active">00:14</p>                  
+                </div>
+                <div class="main__pages">
+                    <p>1</p>
+                    <p class="main__page_active">2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <p>10</p>
+                    <p>...</p>
+                    <p>123</p>
+                    <p><img src="./source/arrow.svg" alt="arrow icon svg" ></p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
